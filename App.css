@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #E2E2E2;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.Space,
+.profileCreate {
+  background-color: #F8FAFE;
+  min-height: 100vh;
+}
+
+.profileCreate {
+  padding: 100px 30px 0 30px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.App h1,
+.App h1 a {
+  padding: 10px;
+  background-color: #C4C4C4;  ;
+  font-weight: bold;
+}
+
+.App main {
+  padding: 30px;
+  text-align: left;
+}
+
+.App main h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.Space header {
+  display: flex;
+  align-items: center;
+}
+
+.Space header.ltheader {
+  font-weight: lighter;
+}
+
+.Space header h2.h2center {
+  position: absolute;
+  left: 25%;
+}
+
+.sidenav {
+  height: 100%;  
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0; 
+  background-color:#ffffff; 
+  transition: .5s ease; 
+  overflow-x: hidden; 
+  padding-top: 20px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.sidenav button, a {
+  background-color: none;
+  font-size: 1rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sidenav button:hover, a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.App main .appBubble {
+  margin-top: 50px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.App main .welcomeAppBubble {
+  margin-top: 50px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+}
+
+.App main .appBubble .profileImg {
+  background: #ffffff;
+  border-radius: 11px;
+}
+
+.App main .welcomeAppBubble .profilecard {
+  display: flex;
+  align-items: center;
+}
+
+.App main .welcomeAppBubble .cardtext,
+.App main .welcomeAppBubble .cardtext p {
+  padding: 10px;
+}
+
+.App main .appBubble img,
+.App main .welcomeAppBubble img,
+.Space main .spaceMember img {
+  background: #ffffff;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.App main .appBubble .username {
+  background: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.App main .bubble .username,
+.App main .bubble .spaceAffiliation,
+.App main .bubble .pronouns {
+  background: #ffffff;
+  padding-left: 10px;
+}
+
+.groupactive {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  font-size: small;
+  padding: 10px;
+}
+.dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  color: #00d600;
+  background-color: #00d600;
+}
+
+.App main div.instructions {
+  margin: 30px 0;
+}
+
+.App main .invited p,
+.App main .aboutPopup p {
+  margin: 25px 0;
+  font-size: 1.2rem;
+}
+
+.App main .aboutPopup p {
+  margin-top: 50px;
+}
+
+.App main .aboutPopup p u {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button.btnBlack {
+  background-color: #000000;
+  color: #ffffff;
+  width: 50%;
+  padding: 15px;
+  border: none;
+  border-radius: 118px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button.btnGreen {
+  margin: 30px 10px 30px 0;
+  background-color: #BDBDBD;
+  color: #ffffff;
+  width: 88px;
+  padding: 15px;
+  border: none;
+  border-radius: 118px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button.btnGreen:active {
+  background-color: #43BF95;
+}
+
+.App main .signup p {
+  font-size: 0.9rem;
+  margin: 20px 0;
+}
+
+.App main .signup .signUpButton {
+  border: none;
+  color: #17A6F6;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.App main span.fiveMin p {
+  font-style: italic;
+  color: #767676;
+  margin-top: 25px;
+}
+
+.App main form {
+  display: flex;
+  flex-direction: column;
+}
+
+.App main form input {
+  border: none;
+  background-color: #F5F7F9;
+  color: #59595a;
+  border-radius: 2px;
+  margin: 5px 0;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.App main form input.btnBlack {
+  background-color: #000000;
+  color: #ffffff;
+  width: 50%;
+  padding: 15px;
+  border: none;
+  border-radius: 118px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.App main span.forgotPassword {
+  float: right;
+  margin: 10px 0 55px 0;
+  background-color: none;
+}
+
+.App main form.codeInput {
+  margin: 45px 0;
+}
+
+.Space header {
+  text-align: left;
+  padding: 15px;
+  color: #202631;
+}
+
+.Space div.spaceName {
+  margin: 20px;
+}
+
+.spaceName p {
+  padding: 15px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 118px;
+  font-weight: bold;
+}
+
+.Space span#company p {
+  color: #343A44;
+  font-size: 1.2rem;
+}
+
+.Space div.spaceBubbles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Space div.spaceBubbles div.spaceBubble {
+  margin: 25px 0;
+  background-color: #ffffff;
+  height: 110px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+}
+
+.Space div.spaceBubbles div.spaceBubble p {
+  margin: 15px;
+  text-align: center;
+  line-height: 1;
+  color: #2D2F33;
+}
+
+.Space div.spaceMember {
+  margin: 25px -30px;
+  width: 100vw;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 6px; 
+}
+
+.Space div.spaceMember div.spaceMemberInfo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.Space div.spaceMember h4 {
+  padding: 15px 30px;
+  font-weight: lighter;
+}
+
+.App main .instructions h4 {
+  padding-top: 20px;
+  font-weight: lighter;
+}
+
+.Space div.spaceMember div.spaceMemberInfo div.username {
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Space #angleRight {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.Profile {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #F8FAFE;
+}
+
+.Profile main {
+  margin: 30px;
+  text-align: left;
+}
+
+.Profile main h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.Profile main form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Profile main form input {
+  border: none;
+  color: #c6cbcf;
+  border-radius: 2px;
+  margin: 5px 0;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.Profile {
+  font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  --primary-color: rgb(67, 191, 149);
+} 
+
+.Profile .form {
+  width: clamp(320px, 30%, 430px);
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+  background-color:#F8FAFE
+}
+
+.Profile .form-step {
+  display: none;
+  transform-origin: top;
+}
+
+.Profile .form-step-active {
+  display: block;
+}
+
+.Profile .btns-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.0rem;
+}
+
+.Profile .btn {
+  padding: 0.10rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+  text-align: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Profile .btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+.profileCreate h2 {
+  font-size: 2.2rem;
+  font-weight: lighter;
+}
+
+.profileCreate label.form-label {
+  color: #343A44;
+  font-size: 1.3rem;
+}
+
+.profileCreate textarea {
+  color: #CACACB;
+  font-family: sans-serif;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.06);
+  width: 88%;
+  height: 150px;
+}
+
+.profileCreate label.radioInput {
+  padding: 18px;
+  background-color: #ffffff;
+  color: #4E4E4E;
+  font-size: 1.1rem;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  line-height: 3.5;
+  width: 312px;
+}
